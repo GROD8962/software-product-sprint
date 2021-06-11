@@ -10,9 +10,28 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/hello")
 public class HelloWorldServlet extends HttpServlet {
 
+  String[] doctor = {"Fantastic!", "Allons-y!", "Geronimo!"};
+  
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    response.setContentType("text/html;");
-    response.getWriter().println("Hello Gabriel!");
+    String json = convertToJson(doctor);
+
+    // Send the JSON as the response
+    response.setContentType("application/json;");
+    response.getWriter().println(json);
+  }
+
+  private String convertToJson(String[] doctor) {
+    String json = "{";
+    json += "\"nine\": ";
+    json += "\"" + doctor[0] + "\"";
+    json += ", ";
+    json += "\"ten\": ";
+    json += "\"" + doctor[1] + "\"";
+    json += ", ";
+    json += "\"eleven\": ";
+    json += "\"" + doctor[2] + "\"";
+    json += "}";
+    return json;
   }
 }
