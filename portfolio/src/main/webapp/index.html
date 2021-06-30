@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Gabriel's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
@@ -32,5 +33,13 @@
       <button onclick="addRandomGreeting()">K-On!</button>
       <div id="greeting-container"></div>
     </div>
+    <div id="chart-container"></div>
+    <form action="/form-handler" method="POST">
+      <p>Enter something here:</p>
+      <textarea name="text-input">placeholder</textarea>
+      <br/>
+      <input type="submit" />
+    </form>
+
   </body>
 </html>
