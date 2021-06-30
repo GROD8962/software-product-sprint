@@ -2,18 +2,44 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Gabriel's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <h1>Gabriel's Portfolio</h1>
+      <p>Hello! My name is Gabriel Rodríguez. Welcome to my portfolio.</p>
+      <p><a href="https://github.com/GROD8962">GitHub</a></p>
+      <p><a href="https://www.linkedin.com/in/gabriel-rodr%C3%ADguez-465624195/">LinkedIn</a></p>
+      <img src="/images/yui_hi.png" />
+      <p>I am 21 years old. I live in Puerto Rico. I'm a computer engineering student at the Inter American University of Puerto Rico. A natural choice, given how much time I spent on the computer growing up. I've always been a total geek for all forms of entertainment, as well as for math and science. Over time, my enjoyment of the arts surpassed my enjoyment of the sciences, but I still love learning about what makes the world go round.</p>
+      <p>If asked to talk about myself, my mind goes to the art that has influenced me over the years and made me who I am. Everything from watching Thomas the Tank Engine as a pre-schooler, to growing up with BIONICLE and Doctor Who, to becoming enamored with anime in my teens, has contributed to making me who I am. I won't go on for too long about my interests, but I'll drop a couple favorites:</p>
+      <p>Favorite anime: Revolutionary Girl Utena</p>
+      <p>Favorite live-action TV series: Doctor Who</p>
+      <p>Favorite movie: Kill Bill</p>
+      <p>Favorite video game: Portal 2</p>
+      <p>Favorite visual novel: Fate/stay night</p>
+      <p>Favorite years-spanning multimedia saga: BIONICLE</p>
+      <p>Out of these, my most enduring love is probably for BIONICLE. Not because it's the highest quality of these, but because I have the most attachment to it. I'd spend hours upon hours browsing the BIONICLE wiki learning all there was to learn about its strangely compelling world.</p>
+      <p>If you're interested in going down this rabbit hole (or just having a peek), click <a href="https://biosector01.com/wiki/Special:Random">here</a> to go to a random page on the wiki.</p>
+      <p>I'm also a huge anime nerd. There's a lot of notable and popular series that I'm still yet to get around to, but in my relatively short time as a viewer, I've seen a decent chunk of anime from different years, different genres, different productions, etc. <a href="images.html">Here's</a> an album of anime I like.</p>
+      <p>Click <a href="blog.html">here</a>  to read a short blog post about the anime listed in the above page.</p>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <button onclick="showString()">Say hi!</button>
+      <p id="string-container"></p>
+      <p>Click here to see the name of a random Light Music Club member:</p>
+      <button onclick="addRandomGreeting()">K-On!</button>
       <div id="greeting-container"></div>
     </div>
+    <div id="chart-container"></div>
+    <form action="/form-handler" method="POST">
+      <p>Enter something here:</p>
+      <textarea name="text-input">placeholder</textarea>
+      <br/>
+      <input type="submit" />
+    </form>
+
   </body>
 </html>
