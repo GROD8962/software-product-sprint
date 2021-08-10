@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/hello")
 public class HelloWorldServlet extends HttpServlet {
 
-  String[] doctor = {"Fantastic!", "Allons-y!", "Geronimo!"};
+  String[] doctor = { "Fantastic!", "Allons-y!", "Geronimo!" };
   
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
