@@ -20,5 +20,7 @@ public class FormHandlerServlet extends HttpServlet {
 
     // Write the value to the response so the user can see it.
     response.getWriter().println("You submitted: " + textValue);
+    response.sendRedirect("http://grodriguez-sps-summer21.appspot.com/");
+
   }
 }
